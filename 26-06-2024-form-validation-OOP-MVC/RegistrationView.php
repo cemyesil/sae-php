@@ -42,10 +42,10 @@ unset($_SESSION['errors']);
             <p>Das Formular wurde erfolgreich übermittelt!</p>
         </div>
         <?php endif; ?>
-        <form action="registration_handler.php" method="POST">
+        <form action="index.php?action=register" method="POST">
             <div class="form-group">
                 <label for="username">Nutzername:</label>
-                <input type="text" id="username" value="Cem_SAE" required>
+                <input type="text" id="username" name="username" value="Cem_SAE" required>
             </div>
 
             <div class="form-group">
